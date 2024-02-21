@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/learn-spring-framework/pom.xml" />
+        <option value="$PROJECT_DIR$/learn-spring-framework-01/pom.xml" />
+        <option value="$PROJECT_DIR$/learn-spring-framework-02/pom.xml" />
       </list>
     </option>
   </component>
