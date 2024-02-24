@@ -15,6 +15,7 @@ public class CourseController {
         return Arrays.asList(
                 new Course(1, "Django", "@Chid"),
                 new Course(1, "Spring Boot", "@Chidambararaja"),
+                new Course(1, "Spring Devtools", "@developerchid"),
                 new Course(1, "GoLang", "@Chidambararajab")
         );
     }
