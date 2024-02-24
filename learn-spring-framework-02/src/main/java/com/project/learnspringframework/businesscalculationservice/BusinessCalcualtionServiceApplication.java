@@ -8,6 +8,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 
@@ -15,7 +17,8 @@ interface DataService {
     int[] responseData();
 }
 
-@Component
+//@Component
+@Repository // @Repository is a specilization of @Component - We can use @Repository if we use t retrive data, its just a word change but similar to the @Component
 @Primary
 class MongoDB implements DataService {
     @Override
@@ -24,7 +27,8 @@ class MongoDB implements DataService {
     }
 }
 
-@Component
+//@Component
+@Repository // @Repository is a specilization of @Component - We can use @Repository if we use t retrive data, its just a word change but similar to the @Component
 @Qualifier("mySqlQualifier")
 class MySQLDB implements DataService {
     @Override
@@ -33,7 +37,7 @@ class MySQLDB implements DataService {
     }
 }
 
-@Component
+@Service // @Service is a specilization of @Component
 public class BusinessCalcualtionServiceApplication {
     private DataService dataService;
 
