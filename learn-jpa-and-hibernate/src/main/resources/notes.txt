@@ -1,0 +1,13 @@
+CREATE TABLE course
+(
+    id bigint not null,
+    name varchar(50) not null,
+    author varchar(20) not null,
+    PRIMARY KEY (id)
+);
+
+insert into course(id, name, author) values(1, 'thechidshow', '@chid');
+
+select * from course;
+
+delete from course where id=1;
