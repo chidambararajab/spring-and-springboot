@@ -16,7 +16,7 @@ public class CourseJpaRepository {
     @PersistenceContext
     private EntityManager entityManager;
 
-    public void insert(Course course) {
+    public void save(Course course) {
         entityManager.merge(course);
     }
 
@@ -25,7 +25,7 @@ public class CourseJpaRepository {
         entityManager.remove(course);
     }
 
-    public Course selectById(long id) {
+    public Course findById(long id) {
         return entityManager.find(Course.class, id);
     }
 }

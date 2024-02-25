@@ -30,7 +30,7 @@ public class CourseJdbcRepository {
                     select * from course where id=?;
             """;
 
-    public void insert(Course course) {
+    public void save(Course course) {
         jdbcTemplate.update(INSERT_QUERY, course.getId(), course.getName(), course.getAuthor());
     }
 
@@ -38,7 +38,7 @@ public class CourseJdbcRepository {
         jdbcTemplate.update(DELETE_QUERY, id);
     }
 
-    public Course selectById(long id) {
+    public Course findById(long id) {
         // ResultSet => Bean => Row Mapper =>
         return jdbcTemplate
                 .queryForObject(SELECT_QUERY_BY_ID_QUERY, new BeanPropertyRowMapper<>(Course.class), id);
