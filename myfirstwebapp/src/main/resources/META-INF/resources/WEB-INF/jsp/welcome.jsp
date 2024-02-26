@@ -38,14 +38,9 @@
 <body>
 
 <div class="login-container">
-    <h1>Welcome, Dood</h1>
-    <h2>Login Form</h2>
-    <div><pre>${error}<pre></div>
-    <form method="post">
-        <input type="text" name="name" placeholder="name"><br>
-        <input type="password" name="password" placeholder="Password"><br>
-        <input type="submit" value="Login">
-    </form>
+    <h1>Welcome, Screen</h1>
+    <h2>You are currently in welcome screen, ${name}</h2>
+    <div><a href="todo" >Manage your todos</a></div>
 </div>
 
 </body>

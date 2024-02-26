@@ -38,14 +38,8 @@
 <body>
 
 <div class="login-container">
-    <h1>Welcome, Dood</h1>
-    <h2>Login Form</h2>
-    <div><pre>${error}<pre></div>
-    <form method="post">
-        <input type="text" name="name" placeholder="name"><br>
-        <input type="password" name="password" placeholder="Password"><br>
-        <input type="submit" value="Login">
-    </form>
+    <h1>Welcome, ${name}</h1>
+    <h2>Yor todos, ${todos}</h2>
 </div>
 
 </body>
