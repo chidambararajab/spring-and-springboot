@@ -39,6 +39,7 @@
 
 <div class="login-container">
     <h1>Welcome, Dood</h1>
+    <hr />
     <h2>Login Form</h2>
     <div><pre>${error}<pre></div>
     <form method="post">

@@ -51,12 +51,12 @@ public class Todo {
         this.date = date;
     }
 
-    public boolean isDone() {
+    public boolean getIsDone() {
         return isDone;
     }
 
-    public void setDone(boolean done) {
-        isDone = done;
+    public void setIsDone(boolean isDone) {
+        this.isDone = isDone;
     }
 
     @Override
@@ -66,7 +66,7 @@ public class Todo {
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", date=" + date +
-                ", isDone=" + isDone +
+                ", done=" + isDone +
                 '}';
     }
 }
