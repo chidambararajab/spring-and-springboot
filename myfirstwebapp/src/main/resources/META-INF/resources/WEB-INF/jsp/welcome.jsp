@@ -40,7 +40,7 @@
 <div class="login-container">
     <h1>Welcome, Screen</h1>
     <h2>You are currently in welcome screen, ${name}</h2>
-    <div><a href="todo" >Manage your todos</a></div>
+    <div><a href="list-todo" >Manage your todos</a></div>
 </div>
 
 </body>
